@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from '../../logo.svg';
 import './App.css';
 
 function App() {
@@ -7,18 +7,16 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h3>Welcome! React Hook Form</h3>
       </header>
+      <main className="Main">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+          minima hic modi magnam delectus. Doloremque magni quisquam ipsam,
+          doloribus suscipit dolores ab dolorem soluta earum odit itaque velit
+          voluptates quis!
+        </p>
+      </main>
     </div>
   );
 }
