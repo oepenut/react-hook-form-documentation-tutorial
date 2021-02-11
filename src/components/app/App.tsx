@@ -1,4 +1,5 @@
 import { useForm } from 'react-hook-form';
+import FormGender from '../FormGender';
 import logo from '../../logo.svg';
 import './App.css';
 
@@ -20,12 +21,16 @@ const App = (): JSX.Element => {
         <h3>Welcome! React Hook Form</h3>
       </header>
       <main className="Main">
-        <form onSubmit={handleSubmit(onSubmit)}>
-          <input name="example" defaultValue="test" ref={register} />
-          <input name="exampleRequired" ref={register({ required: true })} />
-          {errors.exampleRequired && <span>This field is required</span>}
-          <input type="submit" value="Submit" />
-        </form>
+        <div>
+          <h3>Form Example</h3>
+          <form onSubmit={handleSubmit(onSubmit)}>
+            <input name="example" defaultValue="test" ref={register} />
+            <input name="exampleRequired" ref={register({ required: true })} />
+            {errors.exampleRequired && <span>This field is required</span>}
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+        <FormGender />
       </main>
     </div>
   );
